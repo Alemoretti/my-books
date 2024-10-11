@@ -1,2 +1,3 @@
-# my-books
-React project to track books that the user reads
+# My books
+
+## Project created in React and Vite to keep track of books read by the user.
