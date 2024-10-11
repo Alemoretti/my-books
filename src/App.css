@@ -7,6 +7,7 @@
 .App-header {
     background-color: #FFF;
     display: flex;
+    justify-content: center;
 }
 
 .options {
@@ -26,4 +27,14 @@
 
 li {
     list-style: none;
+}
+
+.icones {
+    display: flex;
+}
+
+.icone {
+    margin-right: 40px;
+    align-items: center;
+    display: flex;
 }
