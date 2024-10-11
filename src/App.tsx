@@ -1,14 +1,13 @@
 import './App.css'
-
+import Logo from './components/Logo'
 function App() {
 
   return (
-    <>
+    <div className='App'>
       <header className='App-header'>
-
+        <Logo></Logo>
       </header>
-      <h1>My Books</h1>
-    </>
+    </div>
   )
 }
 
