@@ -20,8 +20,8 @@ const optionsText = ['CATEGORIAS', 'MINHA ESTANTE', 'FAVORITOS']
 function HeaderOptions() {
     return (
         <Options>
-            { optionsText.map( (texto) => (
-            <Option><p>{texto}</p></Option>
+            { optionsText.map( (texto, i) => (
+                <Option key={i}><p>{texto}</p></Option>
             ) ) }
         </Options>
     )
