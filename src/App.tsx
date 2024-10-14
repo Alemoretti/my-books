@@ -1,10 +1,7 @@
 import './App.css'
 import Logo from './components/Logo'
-import perfil from './assets/perfil.svg'
-import sacola from './assets/sacola.svg'
-
-const optionsText = ['CATEGORIAS', 'MINHA ESTANTE', 'FAVORITOS']
-const icones = [perfil, sacola]
+import HeaderOptions from './components/HeaderOptions'
+import HeaderIcons from './components/HeaderIcons'
 
 function App() {
 
@@ -12,16 +9,8 @@ function App() {
     <div className='App'>
       <header className='App-header'>
         <Logo></Logo>
-        <ul className='options'>
-          { optionsText.map( (texto) => (
-            <li className='option'><p>{texto}</p></li>
-          ) ) }
-        </ul>
-        <ul className='icones'>
-          { icones.map( (icone) => (
-            <li className='icone'><img src={icone}></img></li>
-          ) ) }
-        </ul>        
+        <HeaderOptions></HeaderOptions>
+        <HeaderIcons></HeaderIcons>
       </header>
     </div>
   )
