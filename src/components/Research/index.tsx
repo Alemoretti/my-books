@@ -26,10 +26,25 @@ const SubtitleContainer = styled.h3`
     margin-bottom: 40px;
 `
 
+const Result = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    p {
+        width: 200px;
+    }
+    img {
+        width: 100px;
+    }
+    &:hover {
+        border: 1px solid white;
+    }
+`
+
 function Research() {
     const [searchedBooks, setSearchedBooks] = useState<Book[]>([])
-    console.log(searchedBooks)
-    console.log(books)
     return (
         <ResearchContainer>
             <TitleContainer>Já sabe por onde começar?</TitleContainer>
@@ -42,6 +57,14 @@ function Research() {
                     setSearchedBooks(searchResult)
                 }}
             />
+            { searchedBooks.map( book => (
+                <Result>
+                    <img src={book.src} alt={book.name} />
+                    <p>{book.name}</p>
+                </Result>
+            ) ) }
+
+            
         </ResearchContainer>
     )
 }
