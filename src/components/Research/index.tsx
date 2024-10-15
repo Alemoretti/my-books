@@ -47,10 +47,10 @@ function Research() {
     const [searchedBooks, setSearchedBooks] = useState<Book[]>([])
     return (
         <ResearchContainer>
-            <TitleContainer>Já sabe por onde começar?</TitleContainer>
-            <SubtitleContainer>Encontre seu livro em nossa estante.</SubtitleContainer>
+            <TitleContainer>Where to start?</TitleContainer>
+            <SubtitleContainer>Find your book in our sheld.</SubtitleContainer>
             <Input
-                placeholder="Escreva sua próxima leitura"
+                placeholder="Type your next book to read"
                 onBlur={event => {
                     const typedText = event.target.value
                     const searchResult = books.filter( book => book.name.includes(typedText) )
