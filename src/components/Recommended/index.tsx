@@ -62,7 +62,7 @@ const Recommended: React.FC<RecommendedProps> = ({ title, subtitle, description,
         </div>
         <div>
             <BookImg src={img}/>
-            <Button>Saiba mais</Button>
+            <Button>More</Button>
         </div>
     </Card> 
   );

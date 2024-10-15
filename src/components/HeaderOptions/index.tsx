@@ -15,7 +15,7 @@ const Option = styled.ul`
     cursor: pointer;
 `
 
-const optionsText = ['CATEGORIAS', 'MINHA ESTANTE', 'FAVORITOS']
+const optionsText = ['CATEGORIES', 'MY BOOKSHELF', 'FAVORITES']
 
 function HeaderOptions() {
     return (
