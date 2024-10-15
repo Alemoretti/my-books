@@ -18,8 +18,8 @@ const icones = [perfil, sacola]
 function HeaderIcons() {
     return (
         <Icones>
-          { icones.map( (icone) => (
-            <Icone><img src={icone}></img></Icone>
+          { icones.map( (icone, i) => (
+            <Icone key={i}><img src={icone}></img></Icone>
           ) ) }
         </Icones>         
     )
